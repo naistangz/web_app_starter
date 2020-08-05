@@ -1,4 +1,4 @@
-# Web App Starter CI 
+# Jenkins 
 
 ## What is Jenkins?
 > Extracted from [Here](https://intellipaat.com/blog/tutorial/devops-tutorial/jenkins-tutorial/)
@@ -47,10 +47,24 @@
 8. Source Code Management, click on Git
 
 ## Using Github Publisher Plugin
+Automatically pushing code from other branches to master branch to Github if the tests passes.
+
+## Configuring Jenkins 
+1. Name of Project -> Configure -> Source Code Management -> Git. Setup to get the integration branch.
+2. Select Merge before build. With details for master branch. 
+![configure_developer_jenkins](master_branch_jenkins.jpeg)
+3. Post Build -> Git Publisher. Check 'push only if build succeeds, and enter details for your master branch".
+![post_build_merge_master](check_build_master.jpeg)
+
+Jenkins is now configured to merge the integration branch into master if the build succeeds. This assumes that your repository is setup and has a separate branches.\
+You can also setup build triggers to trigger the build automatically 
+
 
 # Recap 
 ### What is an API?
-- APIs allow apps to communicate with another 
+> Extracted from [smartbear](https://smartbear.com/learn/performance-monitoring/api-endpoints/)
+- APIs allow apps to communicate with another-
+- Set of procedures and tools for building software applications.
 - It is the code that governs the *access point(s)* for the server.
 <img src="https://miro.medium.com/max/2000/1*OcmVkcsM5BWRHrg8GC17iw.png">
 - They allow to go get data from outside sources.
@@ -59,6 +73,7 @@
 - APIs inform programmers how to interact with the service
 - Within public sector, APIs are used to allow agencies to easily share information and also lets the public interact with government as well. 
 - Communication channel between your app and the database. 
+- Each API has documentation and specifications which determine how information can be transferred.
 
 ### Why use an API?
 - When accessing another app's data or functionality e.g. all Twitter tweets that mention the #epicodus hashtag, we could ask Twitter for a spreadsheet of all these tweets. **However**, this information becomes **outdated** very quickly. 
@@ -73,6 +88,15 @@ Requests to retrieve or write data are done by sending an **HTTP** request to a 
 
 
 ### What is an API call?
+- Whenever you make a call to a server using APIs, this counts as an API call.
+- Every time you log and ask a question on your computer or an app, you are making an API call.
+- The moment you add an endpoint (the URL where your server can be accessed by a client application) to a URL and send a request to a server, you are making a call. 
+- With an API call, information is sent and processed back to you.
+
+## What is an API Endpoint?
+- One end of a communication channel
+- When an API interacts with another system, the touchpoints of this communication are considered endpoints.
+- For APIS, an endpoint can include a URL of a server or service.
 
 ### What is a Webhook?
 - Aka Web callback, 'Reverse APIs', or HTTP push API, is a way for an app to provide other applications with real-time information
@@ -85,6 +109,7 @@ E.g Twilio, a developer platform for communications uses webhooks to let your ap
 
 
 ### What is NodeJs
-
-
+- A runtime environment for JavaScript 
+- A framework that executes JavaScript code outside a web browser
+- Node.js lets developers use JavaScript to write command line tools and for server-side scripting - running scripts server-side to proudce dynamic web page content before the page is sent to the user's web browser.
 
