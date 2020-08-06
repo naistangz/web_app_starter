@@ -108,6 +108,24 @@ E.g Twilio, a developer platform for communications uses webhooks to let your ap
 ![gif_webhook](sms-http-request-cycle.width-800.gif)
 - They are triggered by some event in a web applications and can facilitate integrating different applications or third-party APIs
 
+### Webhook vs API
+> Extracted from [craftersoftware](https://craftersoftware.com/blog/2019/08/webhooks-vs-apis--whats-the-difference)
+- Both help sync and relay data between two applications
+- APIs make requests and enabling [CRUD](https://github.com/naistangz/Technical_Training/blob/master/docs/Week4_Python/crud.md) (create, read, update, delete) operations
+- This means APIs can not only request data for third-parties, but can manipulate and delete it as well if authorised.
+- Webhooks are automated calls to a server
+- Webhooks do not require requests to be initiated, data is sent whenever there is new data available
+- To set up a webhook, all you have to do is register a URL with the company proving the service you are requesting data from..
+- Webhooks receive calls through HTTP POSTs only when the external system you're hooked to has a data update.
+- Webhooks listens at URL for incoming HTTP POST notification messages 
+
+API | Webhook
+-----|-----
+Request-based|Event-based
+Useful for know whether external system is online |Useful for real-time updates
+Immediately aware if the request was successful because you'll get a response with a status code|Webhooks only communicate if there's an update, so software will be unaware if the other system is offline
+
+SaaS applications use APIs if they want to offer full `CRUD` - create, read, update, and delete - capabilities.
 
 ### What is NodeJs
 - A runtime environment for JavaScript 
