@@ -26,12 +26,12 @@
 ### Configuring Jenkins 
 6. In Jenkins, click on 'New Item' to create a new project
 <img src="https://cdn2.hubspot.net/hubfs/208250/Blog_Images/jengit6.png" alt="new_item_jenkins">
-7. Give your project a name, then choose 'Freestyle project' and finally click 'OK'.
-8. Click on 'Source Code Management' tab
-9. Click on Git and paste your Github repository `url` in the 'Repository URL' field.
-10. Click on the 'Build Triggers' tab and then on the 'Github hook trigger for GITscm polling'.
-11. Click on `apply` and `save`
-12. To test changes, create new directories or folders within the repository and commit changes through git.
+7. Give your project a name, then choose 'Freestyle project' and finally click 'OK'.\
+8. Click on 'Source Code Management' tab\
+9. Click on Git and paste your Github repository `url` in the 'Repository URL' field.\
+10. Click on the 'Build Triggers' tab and then on the 'Github hook trigger for GITscm polling'.\
+11. Click on `apply` and `save`\
+12. To test changes, create new directories or folders within the repository and commit changes through git.\
 13. In Jenkins, click on build history, then console output\
 **which returns**
 [Started by an SCM change screenshot here]
