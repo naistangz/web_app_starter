@@ -33,9 +33,7 @@
 10. Click on the 'Build Triggers' tab and then on the 'Github hook trigger for GITscm polling'.
 11. Click on `apply` and `save`
 12. To test changes, create new directories or folders within the repository and commit changes through git.
-13. In Jenkins, click on build history, then console output
-**which returns**
-[Started by an SCM change screenshot here]
+13. In Jenkins, click on build history, then console output to check whether build has passed or failed.
 
 ## Jenkins integration with GIT (SCM) if plugin not installed 
 1. Click on Jenkins
