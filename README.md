@@ -6,6 +6,12 @@
 - Used to continuously build and test projects, making it easier to integrate the changing codes to it. 
 - Jenkins allows for faster delivery of software by working with a large number of deployment and testing technologies.
 
+## What is an automation server?
+- An application that exposes programmable objects to other applications
+- Automation servers uses the same commands used by developers to build the software and execute unit tests.
+- They are capable of deploying the latest artifact to the production environment 
+- Help ease the deployment for testing and staging environments to quickly alert the QA team to the latest changes.
+
 ## Why use Jenkins?
 - Jenkins practices pipeline-as-a-code concept, that practices automation
 - Jenkins can handle both parallel and distributed builds
@@ -59,6 +65,7 @@ Git Publisher Plugin automatically pushing code from other branches to master br
 
 Jenkins is now configured to merge the integration branch into master if the build succeeds. This assumes that your repository is setup and has a separate branches.\
 You can also setup build triggers to trigger the build automatically 
+
 
 
 # Recap 
@@ -128,7 +135,12 @@ Immediately aware if the request was successful because you'll get a response wi
 SaaS applications use APIs if they want to offer full `CRUD` - create, read, update, and delete - capabilities.
 
 ### What is NodeJs
-- A runtime environment for JavaScript 
+- Not a programming language
+- A [runtime environment](#RTE) for JavaScript
 - A framework that executes JavaScript code outside a web browser
 - Node.js lets developers use JavaScript to write command line tools and for server-side scripting - running scripts server-side to proudce dynamic web page content before the page is sent to the user's web browser.
 
+### RTE
+- Stands for Runtime Environment
+- As soon as software program is executed, it is in a runtime state
+- In this state, program sends instructions to the computer's processor and access the computer's memory (RAM) and other system resources.
