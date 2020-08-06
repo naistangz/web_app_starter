@@ -105,7 +105,7 @@ Requests to retrieve or write data are done by sending an **HTTP** request to a 
 - Unlike APIs where you need to poll (sampling the status of an external device, the continuous checking of other programs to see what state they are in) for data very frequently to get it real-time.
 - Webhooks are user-defined HTTP callbacks, meaning if you want to know what is happening in a web service or application, you can give it a URL to let you know when that happens\
 E.g Twilio, a developer platform for communications uses webhooks to let your application know when events happen, such as receiving an SMS message or getting an incoming phone call.
-![gif_webhook](https://twilio-cms-prod.s3.amazonaws.com/images/sms-http-request-cycle.width-800.gif)
+[gif_webhook](sms-http-request-cycle.width-800.gif)
 - They are triggered by some event in a web applications and can facilitate integrating different applications or third-party APIs
 
 
