@@ -48,7 +48,7 @@
 8. Source Code Management, click on Git
 
 ## Using Github Publisher Plugin
-Automatically pushing code from other branches to master branch to Github if the tests passes.
+Git Publisher Plugin automatically pushing code from other branches to master branch to Github if the tests passes.
 
 ## Configuring Jenkins 
 1. Name of Project -> Configure -> Source Code Management -> Git. Setup to get the integration branch.
